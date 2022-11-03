@@ -7,6 +7,7 @@ namespace VacationRental.Api.Controllers
 {
     [Route("api/v1/bookings")]
     [ApiController]
+
     public class BookingsController : ControllerBase
     {
         private readonly IDictionary<int, RentalViewModel> _rentals;
