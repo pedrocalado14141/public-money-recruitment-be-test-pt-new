@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using VacationRental.Api.Application.ViewModels;
 
-namespace VacationRental.Api.Models
+namespace VacationRental.Api.Application.Models
 {
     public class CalendarViewModel
     {
