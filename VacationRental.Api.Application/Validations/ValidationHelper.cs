@@ -1,31 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Reflection;
-using VacationRental.Api.Application.Exceptions;
 using VacationRental.Api.Application.Models;
 using VacationRental.Api.Application.ViewModels;
-using VacationRental.Api.Domain.Models;
 
 namespace VacationRental.Api.Application.Validations
 {
     internal static class ValidationHelper
     {
-        public static bool ValidateAvailability(BookingBindingModel newBookingModel, BookingViewModel booking, int PreparationTimeInDays)
-        {
-            //Validate unavailable days with prepTime
-            var newBookingDays = newBookingModel.Nights + PreparationTimeInDays;
-            var currentBookingDays = booking.Nights + PreparationTimeInDays -1;
-
-            bool isInputBetween = booking.Start <= newBookingModel.Start.Date && booking.Start.AddDays(currentBookingDays) > newBookingModel.Start.Date;
-            bool isBookingBetween = booking.Start < newBookingModel.Start.AddDays(newBookingDays) && booking.Start.AddDays(currentBookingDays) >= newBookingModel.Start.AddDays(newBookingDays);
-
-                return isInputBetween || isBookingBetween
-                    || (booking.Start > newBookingModel.Start && booking.Start.AddDays(currentBookingDays) < newBookingModel.Start.AddDays(newBookingDays));
-        }
-
         public static bool ValidateBooking(CalendarViewModel bookings, RentalBindingModel rentalBindingModel, int totalUnits)
         {
             List<ValidatePutRentalViewModel> validatePuts = new List<ValidatePutRentalViewModel>();
