@@ -36,7 +36,7 @@ namespace VacationRental.Api.Application.Services
 
             if (model.Nights <= 0)
                 throw new ApplicationException("Nigts must be positive");
-            if (model.Start <= DateTime.Now.Date)
+            if (model.Start < DateTime.Now.Date)
                 throw new ApplicationException("Stat Date cannot be old");
             if (!rentals.ContainsKey(model.RentalId))
                 throw new ApplicationException("Rental not found");
