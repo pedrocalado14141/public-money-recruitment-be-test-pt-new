@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.352
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacationRental.Api", "VacationRental.Api\VacationRental.Api.csproj", "{478C6CBF-6F84-4604-8E31-DEDFDFE10DBC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacationRental.Api.Tests", "VacationRental.Api.Tests\VacationRental.Api.Tests.csproj", "{57FE6E13-7144-459F-BCA8-431087D3DAEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationRental.Api.Application", "VacationRental.Api.Application\VacationRental.Api.Application.csproj", "{CC76773B-C3A8-428F-AEF0-610B3254253F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationRental.Api.Domain", "VacationRental.Api.Domain\VacationRental.Api.Domain.csproj", "{54CD23F8-1136-4349-B752-A0BE93BF3365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationRental.Api.Infrastructure", "VacationRental.Api.Infrastructure\VacationRental.Api.Infrastructure.csproj", "{9292400B-CB8B-4470-8CD1-3ACBA2EBF98C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{57FE6E13-7144-459F-BCA8-431087D3DAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57FE6E13-7144-459F-BCA8-431087D3DAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57FE6E13-7144-459F-BCA8-431087D3DAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC76773B-C3A8-428F-AEF0-610B3254253F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC76773B-C3A8-428F-AEF0-610B3254253F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC76773B-C3A8-428F-AEF0-610B3254253F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC76773B-C3A8-428F-AEF0-610B3254253F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CD23F8-1136-4349-B752-A0BE93BF3365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CD23F8-1136-4349-B752-A0BE93BF3365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CD23F8-1136-4349-B752-A0BE93BF3365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CD23F8-1136-4349-B752-A0BE93BF3365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9292400B-CB8B-4470-8CD1-3ACBA2EBF98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9292400B-CB8B-4470-8CD1-3ACBA2EBF98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9292400B-CB8B-4470-8CD1-3ACBA2EBF98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9292400B-CB8B-4470-8CD1-3ACBA2EBF98C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
